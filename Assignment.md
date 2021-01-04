@@ -200,11 +200,17 @@ confusionMatrix(predVal, as.factor(ValidateData$classe))
 
 ```r
 accuracy <- postResample(predVal, as.factor(ValidateData$classe))
+accuracy
+```
+
+```
+##  Accuracy     Kappa 
+## 0.9901444 0.9875329
 ```
 ## Result
 
-* Accuracy of this model is 0.9881
-* Out-of-Sample error(using ValidateData) is 0.0119
+* Accuracy of this model is 0.9901
+* Out-of-Sample error(using ValidateData) is 0.0099
 * Higher accuracy is achievable with higher number of trees, at the expense of computational time.
 
 

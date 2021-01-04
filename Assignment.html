@@ -513,13 +513,16 @@ confusionMatrix(predVal, as.factor(ValidateData$classe))</code></pre>
 ## Detection Rate         0.2841   0.1910   0.1711   0.1614   0.1825
 ## Detection Prevalence   0.2848   0.1951   0.1747   0.1624   0.1830
 ## Balanced Accuracy      0.9989   0.9909   0.9886   0.9921   0.9960</code></pre>
-<pre class="r"><code>accuracy &lt;- postResample(predVal, as.factor(ValidateData$classe))</code></pre>
+<pre class="r"><code>accuracy &lt;- postResample(predVal, as.factor(ValidateData$classe))
+accuracy</code></pre>
+<pre><code>##  Accuracy     Kappa 
+## 0.9901444 0.9875329</code></pre>
 </div>
 <div id="result" class="section level2">
 <h2>Result</h2>
 <ul>
-<li>Accuracy of this model is 0.9881</li>
-<li>Out-of-Sample error(using ValidateData) is 0.0119</li>
+<li>Accuracy of this model is 0.9901</li>
+<li>Out-of-Sample error(using ValidateData) is 0.0099</li>
 <li>Higher accuracy is achievable with higher number of trees, at the expense of computational time.</li>
 </ul>
 </div>
